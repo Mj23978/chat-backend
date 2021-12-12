@@ -1,0 +1,18 @@
+[global]
+addr = "127.0.0.1"
+port = ":7774"
+
+[log]
+#level = "info"
+level = "debug"
+
+[nats]
+url = "nats://127.0.0.1:4222"
+
+[redis]
+url = "redis://127.0.0.1:6379"
+
+[mongo]
+url = "mongodb://mj23978:m2561357@127.0.0.1:27017"
+
+

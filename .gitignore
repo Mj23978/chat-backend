@@ -1,0 +1,8 @@
+.*.sw[op]
+.idea
+logs
+bin
+configs/cert.pem
+configs/key.pem
+node_modules/
+cover.out

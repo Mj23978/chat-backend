@@ -1,0 +1,24 @@
+[global]
+port = ":7777"
+addr = "127.0.0.1"
+dc = "dc1"
+
+[log]
+level = "info"
+
+[registry]
+addrs = ["etcd:2379"]
+
+[broker]
+url = "nats://127.0.0.1:4222"
+
+[database]
+#url = "26506e25-d7ad-4428-8403-f001cc4c4396.aws.ybdb.io"
+#url = "5f16d893-667e-4f3f-ac52-a890da69c41b-1-westeurope.apps.astra.datastax.com:443"
+url = "127.0.0.1"
+
+[cache]
+url = "redis://127.0.0.1:6379"
+
+
+

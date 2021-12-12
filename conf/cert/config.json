@@ -1,0 +1,16 @@
+{
+  "host": "5f16d893-667e-4f3f-ac52-a890da69c41b-westeurope.db.astra.datastax.com",
+  "port": 29080,
+  "cql_port": 29042,
+  "keyspace": "chat",
+  "localDC": "westeurope",
+  "caCertLocation": "./ca.crt",
+  "keyLocation": "./key",
+  "certLocation": "./cert",
+  "keyStoreLocation": "./identity.jks",
+  "keyStorePassword": "HB6VqD3FSv4N97ClO",
+  "trustStoreLocation": "./trustStore.jks",
+  "trustStorePassword": "Ul0FkNa6v3c4z2XrI",
+  "csvLocation": "./data",
+  "pfxCertPassword": "4rv7nV9Goyl3kZ5UD"
+}

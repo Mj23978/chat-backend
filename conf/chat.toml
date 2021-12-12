@@ -1,0 +1,16 @@
+[global]
+addr = "127.0.0.1"
+port = ":7771"
+
+[log]
+level = "debug"
+
+[nats]
+url = "nats://127.0.0.1:4222"
+
+[redis]
+url = "redis://127.0.0.1:6379"
+
+[etcd]
+addrs = ["etcd:2379"]
+

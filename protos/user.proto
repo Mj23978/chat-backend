@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package api.proc;
+
+import "google/protobuf/empty.proto";
+
+option go_package = ".;api";
+
+enum StatusType {
+  Online = 0;
+  Away = 1;
+  Offline = 2;
+}
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (User) {}
+
+  rpc UpdateUser(UpdateUserRequest) returns (google.protobuf.Empty) {}
+
+  rpc Status(StatusRequest) returns (google.protobuf.Empty) {}
+}
+
+message User {
+  string id = 1;
+  string username = 2;
+  string password = 3;
+  string email = 4;
+  string token = 5;
+  StatusType status = 9;
+  string photo_url = 10;
+}
+
+message UserPublic {
+  string username = 1;
+  string photo_url = 2;
+  StatusType status = 6;
+}
+
+message GetUserRequest { string id = 1; }
+
+message CreateUserRequest { User user = 1; }
+
+message UpdateUserRequest { User user = 1; }
+
+message StatusRequest {
+  string id = 1;
+  StatusType status = 2;
+}
